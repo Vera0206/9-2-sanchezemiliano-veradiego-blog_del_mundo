@@ -1,0 +1,16 @@
+body {
+    background-color:rgb(29, 27, 27);
+    color: white;
+}
+article{
+    background-color: rgb(44, 43, 43);
+}
+nav>ul>li {
+    color: yellow;
+}
+
+.resaltado {
+    #titulo_del_blog
+    text-align: center;
+    font-size: 3rem;
+}
