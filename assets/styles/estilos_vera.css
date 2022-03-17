@@ -4,14 +4,60 @@ body {
 }
 article{
     background-color: rgb(44, 43, 43);
+    padding: 1.5rem;
+    border-color: white rgb(44, 43, 43) 1px;
 }
 nav>ul>li {
     color: yellow;
 }
 
-.resaltado {
+.resultado {
     #titulo_del_blog
     text-align: center;
     font-size: 3rem;
 }
 
+.ilustracion {
+    border: solid white;
+}
+
+/* grid */
+section {
+    
+    /* despliégate como  grid */
+    display: grid;
+    /* Crea 12 columnas cada una de una fracción usando la función repeat*/
+    grid-template-columns: repeat(12, 1fr);
+    /* deja que las filas(renglones) ocupen el alto que necesitan */
+    grid-auto-rows: auto;
+    /* añade un espacio entre los elementos del grid de 3rem */
+    gap: 3rem;
+}
+
+/* Termina grid */
+
+
+/* apunta sólo a los header que son hijos directos de section */
+section>header {
+    /* esta sección se extenderá 12 columnas. */
+    grid-column: span 12;
+}
+
+
+/* apunta sólo a los header que son hijos directos de section */
+section>main {
+    /* esta sección se extenderá 12 columnas. */
+    grid-column: span 8;
+}
+
+/* apunta sólo a los header que son hijos directos de section */
+section>aside {
+    /* esta sección se extenderá 12 columnas. */
+    grid-column: span 4;
+}
+
+/* apunta sólo a los header que son hijos directos de section */
+section>footer {
+    /* esta sección se extenderá 12 columnas. */
+    grid-column: span 12;
+}
